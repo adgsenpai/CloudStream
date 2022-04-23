@@ -5,7 +5,7 @@ Android app for streaming and downloading Movies, TV-Series and Anime.
 
 ## Download App
 
-<a href="../CloudStream.apk" download><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/OOjs_UI_icon_download.svg/1200px-OOjs_UI_icon_download.svg.png" width=25px></a>
+<a href="/CloudStream.apk" download><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/OOjs_UI_icon_download.svg/1200px-OOjs_UI_icon_download.svg.png" width=25px></a>
 
 
 ## Features
@@ -54,6 +54,12 @@ The app is purely for educational and personal use.
 CloudStream does not host any content on the app, and has no control over what media is put up or taken down. CloudStream  functions like any other search engine, such as Google. CloudStream  does not host, upload or manage any videos, films or content. It simply crawls, aggregates and displayes links in a convenient, user-friendly interface.
 
 It merely scrapes 3rd-party websites that are publicly accessable via any regular web browser. It is the responsibility of user to avoid any actions that might violate the laws governing his/her locality. Use CloudStream at your own risk.
+
+## Author of webpage and modded app
+
+Ashlin Darius Govindasamy
+
+repo is https://github.com/adgsenpai/CloudStream-3
 
 ## Credits
 App bootstrapped with https://github.com/LagradOst/CloudStream-3 check it out!
