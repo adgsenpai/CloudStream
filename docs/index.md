@@ -1,116 +1,59 @@
-# ADGDOCS
-creates a web app using markdown files
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Circle-icons-cloud.svg/2048px-Circle-icons-cloud.svg.png" width=150px>
 
-## Installation
-fetch the repo using the command
+# CloudStream
+Android app for streaming and downloading Movies, TV-Series and Anime.
 
-``
-git clone https://github.com/ADGSTUDIOS/ADGDOCS/
-``
+## Download App
 
-install modules found in `ADGDOCS/requirements.txt` using the command below
-
-``
-pip install -r requirements.txt
-``
-
-### If you are using GitHub Actions
-
-Change the following in buildblog.yml to your config
-
-![image](https://user-images.githubusercontent.com/45560312/150775275-b827f265-5197-4fea-9e99-34d4fe525ab9.png)
-![image](https://user-images.githubusercontent.com/45560312/150775673-4fa3b2bf-9561-4e24-bc40-ef5d8251c479.png)
+<a href="../CloudStream.apk" download><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/OOjs_UI_icon_download.svg/1200px-OOjs_UI_icon_download.svg.png" width=25px></a>
 
 
-Also enable GitHub Pages to `gh-pages` branch for you to host the website.
+## Features
 
-![image](https://user-images.githubusercontent.com/45560312/150775748-a4c29f12-6b87-4b58-8622-39370fd39732.png)
+- Zero Ads, Zero Porn
+- No Tracking/Analytics
+- Bookmarks
+- Allows you to download and stream movies, tv-shows and anime
+- Chromecast
 
+## App Screenshots
+<p float="left">
+  <img src="./graphics/frontpage.jpeg" width="150" />
+  <img src="./graphics/animefrontpage.jpeg" width="150" />
+  <img src="./graphics/peaky.jpeg" width="150" />
+</p>
 
-## Configuration
+## Supported Languages
 
-### Changing Metadata
+- 🇱🇧 Arabic
+- 🇳🇱 Dutch
+- 🇬🇧 English
+- 🇫🇷 French
+- 🇩🇪 German
+- 🇬🇷 Greek
+- 🇮🇳 Hindi
+- 🇮🇹 Italian
+- 🇲🇰 Macedonian
+- 🇮🇳 Malayalam
+- 🇳🇴 Norsk
+- 🇵🇱 Polish
+- 🇧🇷 Portuguese (Brazil)
+- 🇷🇴 Romanian
+- 🇪🇸 Spanish
+- 🇸🇪 Swedish
+- 🇵🇭 Tagalog
+- 🇹🇷 Turkish
+- 🇻🇳 Vietnamese
 
-in `mkdocs.yml`
+## Disclaimer
 
+Any legal issues regarding the content on this application should be taken up with the actual file hosts and providers themselves as we are not affiliated with them.
+In case of copyright infringement, please directly contact the responsible parties or the streaming websites.
 
-```
-site_name: ADGDOCS
-copyright: "ADGSTUDIOS"
-site_url: https://adgstudios.com
-repo_url: https://github.com/ADGSTUDIOS/ADGDOCS
-repo_name: ADGSTUDIOS/ADGDOCS
-```
+The app is purely for educational and personal use.
+CloudStream does not host any content on the app, and has no control over what media is put up or taken down. CloudStream  functions like any other search engine, such as Google. CloudStream  does not host, upload or manage any videos, films or content. It simply crawls, aggregates and displayes links in a convenient, user-friendly interface.
 
-you can change all values with appropriate values
+It merely scrapes 3rd-party websites that are publicly accessable via any regular web browser. It is the responsibility of user to avoid any actions that might violate the laws governing his/her locality. Use CloudStream at your own risk.
 
-### NAV Bar
-
-in `mkdocs.yml`
-
-```
-nav:
-      - Title:
-        - Subtitle: index.md
-```
-
-work with the syntax here to add more pages and markup files
-
-### Social Media 
-in `mkdocs.yml`
-
-```
-  social:
-            - icon: fontawesome/brands/github
-              link: "https://github.com/ADGSTUDIOS"
-            - icon: fontawesome/brands/linkedin
-              link: "https://www.linkedin.com/in/adgsenpai/"
-```
-
-for icons look up into `fontawesome` docs
-
-change the links to your social media links
-
-### Adding files
-add your markdown files in `/docs/`
-
-for example adding `file2.md` and `file3.md`
-
-```
--ADGDOCS
-    -docs
-        -index.md
-        -file2.md
-        -file3.md
-```
-
-### Changing icons
-in `mkdocs.yml`
-under `themes`
-
-to change the icons/favicon change the paths down below
-
-```
-      favicon: ./static/favicon.png
-      logo: ./static/favicon.png
-```
-
-
-
-### Deployment
-
-To run the web app you can run this command
-
-``
-python -m mkdocs serve
-``
-
-## Compiling Web Files
-
-To build webfiles you can run
-
-``
-python -m mkdocs build
-``
-
-you will find your stuff in `ADGDOCS/site`
+## Credits
+App bootstrapped with https://github.com/LagradOst/CloudStream-3 check it out!
