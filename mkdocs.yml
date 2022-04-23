@@ -1,0 +1,64 @@
+site_name: ADGDOCS
+copyright: "ADGSTUDIOS"
+site_url: https://adgstudios.com
+repo_url: https://github.com/ADGSTUDIOS/ADGDOCS
+repo_name: ADGSTUDIOS/ADGDOCS
+nav:
+      - Getting Started:
+        - Technical Documents: index.md
+theme:
+      name: material
+      highlightjs: true
+      hljs_languages:
+            - yaml
+      icon:
+            repo: fontawesome/brands/github
+      navigation_depth: 6
+      titles_only: false
+      favicon: ./static/favicon.png
+      logo: ./static/favicon.png
+      features:
+            - navigation.instant
+      palette:
+            - media: "(prefers-color-scheme: light)"
+              scheme: default
+              toggle:
+                    icon: material/weather-sunny
+                    name: Switch to dark mode
+            - media: "(prefers-color-scheme: dark)"
+              scheme: slate
+              primary: red
+              toggle:
+                    icon: material/weather-night
+                    name: Switch to light mode
+markdown_extensions:
+      - toc:
+              permalink: "#"
+      - smarty
+      - admonition
+      - footnotes
+      - codehilite
+      - pymdownx.arithmatex
+      - pymdownx.betterem:
+              smart_enable: all
+      - pymdownx.caret
+      - pymdownx.critic
+      - pymdownx.details
+      - pymdownx.emoji:
+              emoji_generator: !!python/name:pymdownx.emoji.to_svg
+      - pymdownx.inlinehilite
+      - pymdownx.magiclink
+      - pymdownx.mark
+      - pymdownx.smartsymbols
+      - pymdownx.superfences
+      - pymdownx.tasklist:
+              custom_checkbox: true
+      - pymdownx.tilde
+      - fontawesome_markdown
+extra:
+      social:
+            - icon: fontawesome/brands/github
+              link: "https://github.com/ADGSTUDIOS"
+            - icon: fontawesome/brands/linkedin
+              link: "https://www.linkedin.com/in/adgsenpai/"
+      manifest: "static/site.webmanifest"

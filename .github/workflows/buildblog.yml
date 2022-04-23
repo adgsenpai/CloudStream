@@ -1,0 +1,60 @@
+name: Publish docs via GitHub Pages
+on:
+  workflow_dispatch:
+  push:
+  
+jobs:
+  build:
+    name: Build Blog HTML Files and Push to GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v2
+
+      - name: Deploy docs
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CUSTOM_DOMAIN: blogs.adgstudios.co.za
+          CONFIG_FILE: ./mkdocs.yml
+          EXTRA_PACKAGES: build-base
+          REQUIREMENTS: ./requirements.txt
+
+  CopyPythonScript:
+    needs: [build]
+    name: Copying RemoveBranding.py to gh-pages branch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Copying Python Script From main
+        env:
+          SRC_FOLDER_PATH: '/'
+          TARGET_BRANCH: 'gh-pages'
+        run: |
+          chmod -R 777 .
+          git config --global user.name 'adgsenpai'
+          git config --global user.email 'adgrules@hotmail.com'
+          git fetch                         # fetch branches
+          git checkout -f $TARGET_BRANCH       # checkout to your branch
+          git checkout -f ${GITHUB_REF##*/} -- removebranding.py
+          git add -A
+          git diff-index --quiet HEAD ||  git commit -am "Added Python Script to remove Branding"
+          git push origin $TARGET_BRANCH # push to remote branch
+                
+  RemoveBranding:
+      needs: [CopyPythonScript]
+      name:  Remove Branding and Final Push
+      runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@v2
+      - name: Run Script and Final Push to gh-pages
+        run: |
+          chmod -R 777 .
+          git config --global user.name 'adgsenpai'
+          git config --global user.email 'adgrules@hotmail.com'
+          git fetch
+          git checkout -f gh-pages
+          python removebranding.py
+          git add .
+          git commit -m "Removed MKDocs Branding"
+          git push origin gh-pages --force
