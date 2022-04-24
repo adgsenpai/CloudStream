@@ -23,6 +23,10 @@ Android app for streaming and downloading Movies, TV-Series and Anime.
   <img src="./graphics/peaky.jpeg" width="150" />
 </p>
 
+## Streaming Sites supported
+
+[You can visit here for the full list!](https://lagradost.github.io/CloudStream-3/)
+
 ## Supported Languages
 
 - 🇱🇧 Arabic
