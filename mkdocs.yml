@@ -4,8 +4,8 @@ site_url: https://adgstudios.co.za
 repo_url: https://github.com/adgsenpai/CloudStream-3
 repo_name: adgsenpai/CloudStream-3
 nav:
-      - Getting Started:
-        - Technical Documents: index.md
+      - Homepage:
+        - About App: index.md
 theme:
       name: material
       highlightjs: true
