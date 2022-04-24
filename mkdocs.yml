@@ -15,8 +15,8 @@ theme:
             repo: fontawesome/brands/github
       navigation_depth: 6
       titles_only: false
-      favicon: ./static/favicon.png
-      logo: ./static/favicon.png
+      favicon: https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Circle-icons-cloud.svg/2048px-Circle-icons-cloud.svg.png
+      logo: https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Circle-icons-cloud.svg/2048px-Circle-icons-cloud.svg.png
       features:
             - navigation.instant
       palette:
