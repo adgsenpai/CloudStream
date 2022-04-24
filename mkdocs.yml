@@ -1,8 +1,8 @@
-site_name: ADGDOCS
+site_name: CloudStream
 copyright: "ADGSTUDIOS"
-site_url: https://adgstudios.com
-repo_url: https://github.com/ADGSTUDIOS/ADGDOCS
-repo_name: ADGSTUDIOS/ADGDOCS
+site_url: https://adgstudios.co.za
+repo_url: https://github.com/adgsenpai/CloudStream-3
+repo_name: adgsenpai/CloudStream-3
 nav:
       - Getting Started:
         - Technical Documents: index.md
